@@ -9,11 +9,11 @@
             .then(res => res.arrayBuffer())
             .then(bytes => WebAssembly.instantiate(bytes, {}))
             .then(res => {
-                alert(res.instance.exports.add_one(41));
+                alert(res.instance.exports.add_one(628));
             });
         </script>
     </head>
     <body>
-        
+        <p>You should have seen an alert dialog. <a href="#" onclick="location.reload();">refresh</a></p>
     </body>
 </html>
